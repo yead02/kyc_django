@@ -1,0 +1,286 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		<!-- Meta data -->
+		<link rel="icon" href="{% static 'micon.ico' %}" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+		<!-- Title -->
+		<title>Modhumoti Bank</title>
+
+		<!-- Bootstrap Css -->
+		<link href="{% static 'plugins/bootstrap-4.3.1-dist/css/bootstrap.min.css' %}" rel="stylesheet" />
+
+		<!-- Sidemenu Css -->
+		<link href="{% static 'plugins/toggle-sidebar/sidemenu.css' %}" rel="stylesheet" />
+
+		<!-- Dashboard Css -->
+		<link href="{% static 'css/style.css' %}" rel="stylesheet" />
+		<link href="{% static 'css/admin-custom.css' %}" rel="stylesheet" />
+
+		<!-- c3.js Charts Plugin -->
+		<link href="{% static 'plugins/charts-c3/c3-chart.css' %}" rel="stylesheet" />
+
+		<!-- select2 Plugin -->
+		<link href="{% static 'plugins/select2/select2.min.css' %}" rel="stylesheet" />
+
+		<!-- Time picker Plugin -->
+		<link href="{% static 'plugins/time-picker/jquery.timepicker.css' %}" rel="stylesheet" />
+
+		<!-- Date Picker Plugin -->
+		<link href="{% static '/plugins/date-picker/spectrum.css' %}" rel="stylesheet" />
+
+		<!-- Custom scroll bar css-->
+		<link href="{% static 'plugins/scroll-bar/jquery.mCustomScrollbar.css' %}" rel="stylesheet" />
+
+		<!-- file Uploads -->
+        <link href="{% static 'plugins/fileuploads/css/dropify.css' %}" rel="stylesheet" type="text/css" />
+
+		<!---Font icons-->
+		<link href="{% static 'css/icons.css' %}" rel="stylesheet"/>
+		<link rel="stylesheet" href="{% static 'fonts/fonts/font-awesome.min.css' %}">
+
+	</head>
+
+	<body class="app sidebar-mini" style="background-color: #fff;">
+
+		<!--Loader-->
+		<div id="global-loader">
+			<img src="{% static 'images/loader.svg' %}" class="loader-img" alt="">
+		</div>
+		<!--/Loader-->
+
+		<!--Page-->
+		<div class="page">
+			<div class="page-main">
+
+				<!--App-Header-->
+
+				<!--/App-Header-->
+
+				<!--App-Content-->
+				<div class="app-content  my-3 my-md-5">
+					<div class="side-app">
+
+						<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+				<aside class="app-sidebar doc-sidebar">
+					<div class="app-sidebar__user clearfix">
+						<div>
+							<div>
+								<img src="{% static 'images/faces/male/logo.jpg' %}">
+								<br>
+								<br>
+								<br>
+								<button type="submit" style="background-color: #ff9999; width:200px;" class="btn btn-primary "><a href="Fixed_Deposit">Fixed_deposit Form</a></button> <br><br>
+								<button type="submit" style="background-color: #ff9999; width:200px;" class="btn btn-primary "><a href="Individual">Individual Form</a></button> <br><br>
+								<button type="submit" style="background-color: #ff9999; width:200px;" class="btn btn-primary "><a href="non-individual">Non-Individual Form</a></button> <br><br>
+								<button type="submit" style="background-color: #ff9999; width:200px;" class="btn btn-primary "><a href="Govt_Acc">Government Account Form</a></button> <br><br>
+								<form class="form-inline mr-auto">
+									<div class="nav-search">
+										<input type="search" class="form-control header-search" placeholder="Search…" aria-label="Search" >
+										<button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+									</div>
+								</form>
+								<br>
+								<button type="submit" style="background-color: #ff9999; width:200px;" class="btn btn-primary ">Print the form</button> <br><br>
+							</div>
+						</div>
+					</div>
+				</aside>
+
+						<!--Page-Header-->
+						<div class="page-header" style="background-color: #007942;">
+							<h1 style="color:white">Government Account KYC Profile Form</h1>
+							
+						</div>
+						<!--/Page-Header-->
+
+						<!-- end row -->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card m-b-20">
+									<div class="card-body">
+										<form>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1">Manager, Modhumoti Bank<br>Branch Name:</label>
+														<input type="text" class="form-control" id="bname"  placeholder="Branch Name">
+													</div>
+												</div>
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1"><br>Date</label>
+														<input type="date" class="form-control" id="date" >
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-form-label">Account Title</label>
+												<textarea class="form-control" name="example-textarea-input" rows="2" placeholder="Account title"></textarea>
+											</div>
+											<div class="form-group">
+												<label class="col-form-label">Type of Account</label>
+												<textarea class="form-control" name="example-textarea-input" rows="2" placeholder="Type of Account"></textarea>
+											</div>
+											<div class="form-group">
+												<label class="col-form-label">Organization Nature<br>(Details)</label>
+												<textarea class="form-control" name="example-textarea-input" rows="2" placeholder="Organizaion "></textarea>
+											</div>
+											<div class="form-group">
+												<label class="col-form-label">Source/Sources of Fund<br>(Details)</label>
+												<textarea class="form-control" name="example-textarea-input" rows="2" placeholder="Source of fund"></textarea>
+											</div>
+											<div class="form-group">
+												<label class="col-form-label">Documents Collected to Ensure the Source of Fund</label>
+												<br>1. <input type="text" class="form-control" id="document1">
+												2. <input type="text" class="form-control" id="document2">
+												3. <input type="text" class="form-control" id="document3">
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1"><br>Collected Documents Have Been Verified or Not</label>
+														<input type="radio" id="yes" name="yn" value="yes">
+														<label for="male">Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+														<input type="radio" id="no" name="yn" value="no">
+														<label for="female">No</label>
+													</div>
+												</div>
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1"><br>How the Address(es) of the Account Holder varified</label>
+														<input type="text" class="form-control" id="Address_varify" >
+													</div>
+												</div>
+											</div>
+											<table class="table card-table table-vcenter text-nowrap table-primary" >
+												<thead  class="bg-primary text-white">
+													<tr >
+														<th class="text-white">Organization (Documents)</th>
+														<th class="text-white"></th>
+														<th class="text-white">reviced Copy</th>
+														<th class="text-white">Varifeid</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>A. Electronic Tax ID (E-TIN) No</th>
+														<td><input type="text" id="etin"></td>
+														<td><input type="checkbox" id="etincb1"></td>
+														<td><input type="checkbox" id="etincb2">(If applicable)</td>
+													</tr>
+													<tr>
+														<th>B. VAT Registration No No</th>
+														<td><input type="text" id="vat"></td>
+														<td><input type="checkbox" id="vatcb1"></td>
+														<td><input type="checkbox" id="vatcb2">(If applicable)</td>
+													</tr>
+													<tr>
+														<th>C. Decision Regarding A/C Operation</th>
+														<td><input type="text" id="aco"></td>
+														<td><input type="checkbox" id="acocb1"></td>
+														<td><input type="checkbox" id="acocb2"> (If applicable)</td>
+													</tr>
+													<tr>
+														<th>D. Other Documentation</th>
+														<td><input type="text" id="od"></td>
+														<td><input type="checkbox" id="odcb1"></td>
+														<td><input type="checkbox" id="odcb2">(If applicable)</td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="form-group">
+												<div class="form-group">
+													<label class="form-label" for="exampleInputEmail1"><br>Risk Grading</label>
+													<input type="radio" id="high" name="rg" value="high">
+													<label for="male">High &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+													<input type="radio" id="low" name="rg" value="low">
+													<label for="female">Low</label>
+													<label for="other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Based on Subjective matter)</label>
+												</div>
+											</div>
+											
+											<div class="form-group">
+												<label class="col-form-label">Comments</label>
+												<textarea class="form-control" name="example-textarea-input" rows="4" placeholder="Comments"></textarea>
+											</div>
+
+
+											
+											<button type="submit" class="btn btn-primary ">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Back to top -->
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top" ><i class="fa fa-rocket' %}"></i></a>
+
+		<!-- JQuery js-->
+		<script src="{% static 'js/vendors/jquery-3.2.1.min.js' %}"></script>
+
+		<!-- Bootstrap js -->
+		<script src="{% static 'plugins/bootstrap-4.3.1-dist/js/popper.min.js' %}"></script>
+		<script src="{% static 'plugins/bootstrap-4.3.1-dist/js/bootstrap.min.js' %}"></script>
+
+		<!--JQuery Sparkline Js-->
+		<script src="{% static 'js/vendors/jquery.sparkline.min.js' %}"></script>
+
+		<!-- Circle Progress Js-->
+		<script src="{% static 'js/vendors/circle-progress.min.js' %}"></script>
+
+		<!-- Star Rating Js-->
+		<script src="{% static 'plugins/rating/jquery.rating-stars.js' %}"></script>
+
+		<!-- Fullside-menu Js-->
+		<script src="{% static 'plugins/toggle-sidebar/sidemenu.js' %}"></script>
+
+		<!--Select2 js -->
+		<script src="{% static 'plugins/select2/select2.full.min.js' %}"></script>
+
+		<!-- Timepicker js -->
+		<script src="{% static 'plugins/time-picker/jquery.timepicker.js' %}"></script>
+		<script src="{% static 'plugins/time-picker/toggles.min.js' %}"></script>
+
+		<!-- Datepicker js -->
+		<script src="{% static 'plugins/date-picker/spectrum.js' %}"></script>
+		<script src="{% static 'plugins/date-picker/jquery-ui.js' %}"></script>
+		<script src="{% static 'plugins/input-mask/jquery.maskedinput.js' %}"></script>
+
+		<!-- Inline js -->
+		<script src="{% static 'js/select2.js' %}"></script>
+		<script src="{% static 'js/formelements.js' %}"></script>
+
+		<!-- file uploads js -->
+        <script src="{% static 'plugins/fileuploads/js/dropify.js' %}"></script>
+
+		<!--InputMask Js-->
+		<script src="{% static 'plugins/jquery-inputmask/jquery.inputmask.bundle.min.js' %}"></script>
+
+		<!-- Custom scroll bar Js-->
+		<script src="{% static 'plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+
+		<!--Counters -->
+		<script src="{% static 'plugins/counters/counterup.min.js' %}"></script>
+		<script src="{% static 'plugins/counters/waypoints.min.js' %}"></script>
+
+		<!-- Custom Js-->
+		<script src="{% static 'js/admin-custom.js' %}"></script>
+
+	</body>
+</html>
+
+

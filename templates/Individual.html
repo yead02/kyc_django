@@ -1,0 +1,864 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		<!-- Meta data -->
+		<meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="Reallist- Bootstrap Responsive Real estate Classifieds, Dealer, Rentel, Builder and Agent Multipurpose HTML Template" name="description">
+		<meta content="Spruko Technologies Private Limited" name="author">
+		<meta name="keywords" content="html template, real estate websites, real estate html template, property websites, premium html templates, real estate company website, bootstrap real estate template, real estate marketplace html template, listing website template, property listing html template, real estate bootstrap template, real estate html5 template, real estate listing template, property template, property dealer website"/>
+
+		<!-- Favicon -->
+		<link rel="icon" href="{% static 'micon.ico' %}" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+		<!-- Title -->
+		<title>Modhumoti Bank</title>
+
+		<!-- Bootstrap Css -->
+		<link href="{% static 'plugins/bootstrap-4.3.1-dist/css/bootstrap.min.css' %}" rel="stylesheet" />
+
+		<!-- Sidemenu Css -->
+		<link href="{% static 'plugins/toggle-sidebar/sidemenu.css' %}" rel="stylesheet" />
+
+		<!-- Dashboard Css -->
+		<link href="{% static 'css/style.css' %}" rel="stylesheet" />
+		<link href="{% static 'css/admin-custom.css' %}" rel="stylesheet" />
+
+		<!-- c3.js Charts Plugin -->
+		<link href="{% static 'plugins/charts-c3/c3-chart.css' %}" rel="stylesheet" />
+
+		<!-- select2 Plugin -->
+		<link href="{% static 'plugins/select2/select2.min.css' %}" rel="stylesheet" />
+
+		<!-- Time picker Plugin -->
+		<link href="{% static 'plugins/time-picker/jquery.timepicker.css' %}" rel="stylesheet" />
+
+		<!-- Date Picker Plugin -->
+		<link href="{% static '/plugins/date-picker/spectrum.css' %}" rel="stylesheet" />
+
+		<!-- Custom scroll bar css-->
+		<link href="{% static 'plugins/scroll-bar/jquery.mCustomScrollbar.css' %}" rel="stylesheet" />
+
+		<!-- file Uploads -->
+        <link href="{% static 'plugins/fileuploads/css/dropify.css' %}" rel="stylesheet" type="text/css" />
+
+		<!---Font icons-->
+		<link href="{% static 'css/icons.css' %}" rel="stylesheet"/>
+		<link rel="stylesheet" href="{% static 'fonts/fonts/font-awesome.min.css' %}">
+
+	</head>
+
+	<body class="app sidebar-mini" style="background-color: #fff;">
+
+		<!--Loader-->
+		<div id="global-loader">
+			<img src="{% static 'images/loader.svg' %}" class="loader-img" alt="">
+		</div>
+		<!--/Loader-->
+
+		<!--Page-->
+		<div class="page">
+			<div class="page-main">
+
+				<!--App-Header-->
+
+				<!--/App-Header-->
+
+				<!--App-Content-->
+				<div class="app-content  my-3 my-md-5">
+					<div class="side-app">
+
+						<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+				<aside class="app-sidebar doc-sidebar">
+					<div class="app-sidebar__user clearfix">
+						<div>
+							<div>
+								<img src="{% static 'images/faces/male/logo.jpg' %}">
+								<br>
+								<br>
+								<br>
+								<button type="submit" style="background-color: #ff9999; width:200px;" class="btn btn-primary "><a href="Fixed_Deposit">Fixed_deposit Form</a></button> <br><br>
+								<button type="submit" style="background-color: #ff9999; width:200px;" class="btn btn-primary "><a href="Individual">Individual Form</a></button> <br><br>
+								<button type="submit" style="background-color: #ff9999; width:200px;" class="btn btn-primary "><a href="non-individual">Non-Individual Form</a></button> <br><br>
+								<button type="submit" style="background-color: #ff9999; width:200px;" class="btn btn-primary "><a href="Govt_Acc">Government Account Form</a></button> <br><br>
+								<form class="form-inline mr-auto">
+									<div class="nav-search">
+										<input type="search" class="form-control header-search" placeholder="Search…" aria-label="Search" >
+										<button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+									</div>
+								</form>
+								<br>
+								<button type="submit" style="background-color: #ff9999; width:200px;" class="btn btn-primary ">Print the form</button> <br><br>
+							</div>
+						</div>
+					</div>
+				</aside>
+
+						<!--Page-Header-->
+						<div class="page-header" style="background-color: #007942;">
+							<h1 style="color:white">Individual (Transactional A/C) KYC profile form</h1>
+							
+						</div>
+						<!--/Page-Header-->
+
+						<!-- end row -->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card m-b-20">
+									<div class="card-body">
+										<form>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1">Manager, Modhumoti Bank<br>Branch Name:</label>
+														<input type="text" class="form-control" id="bname"  placeholder="Branch Name">
+													</div>
+												</div>
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1"><br>Date</label>
+														<input type="date" class="form-control" id="date" >
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-form-label">Account Title</label>
+												<textarea class="form-control" name="example-textarea-input" rows="2" placeholder="Account title"></textarea>
+											</div>
+											<div class="form-group">
+                                                <label class="col-form-label">Type of Account</label>
+                                                <br><input type="radio" id="saving" name="toa" value="saving">
+												<label for="male">Savings A/C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+												<input type="radio" id="current" name="toa" value="current`">
+												<label for="female">Current A/C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                                <input type="radio" id="snd" name="toa" value="snd">
+												<label for="male">SND A/C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                                <input type="radio" id="nfcd" name="toa" value="nfcd">
+												<label for="male">NFCD A/C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                                <input type="radio" id="rfcd" name="toa" value="rfcd">
+												<label for="male">RFCD A/C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                                <input type="radio" id="foreign" name="toa" value="foreign">
+												<label for="male">Foreign A/C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+												<input type="radio" id="others" name="toa" value="others">
+                                                <label for="female">others &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                                <input type="text" class="form-control" id="otherstext"  placeholder="others" >
+											</div>
+											<div class="form-group">
+												<label class="col-form-label">Customer's Occupation<br>(Details)</label>
+												<textarea class="form-control" name="example-textarea-input" rows="2" placeholder="Organizaion "></textarea>
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1">Customer's Probable Monthly Income:</label>
+														<input type="text" class="form-control" id="mincome"  placeholder="Income">
+													</div>
+												</div>
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1">Source(s) of Found(Details)</label>
+														<input type="text" class="form-control" id="source" placeholder="Income">
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-form-label">Documents Collected to Ensure the Source of Fund</label>
+												<br>1. <input type="text" class="form-control" id="document1">
+												2. <input type="text" class="form-control" id="document2">
+												3. <input type="text" class="form-control" id="document3">
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1"><br>Collected Documents Have Been Verified or Not</label>
+														<input type="radio" id="yes" name="yn" value="yes">
+														<label for="male">Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+														<input type="radio" id="no" name="yn" value="no">
+														<label for="female">No</label>
+													</div>
+												</div>
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1"><br>How the Address(es) of the Account Holder varified</label>
+														<input type="text" class="form-control" id="Address_varify" >
+													</div>
+												</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="exampleInputEmail1"><br>Has The Beneficial Owner of the Account Been Identified?</label>
+                                                <input type="radio" id="yes" name="identified" value="yes">
+                                                <label for="male">Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                                <input type="radio" id="no" name="identified" value="no">
+                                                <label for="female">No</label>
+                                            </div>
+                                            <label class="form-label" for="exampleInputEmail1"><br>(If Answer is Yes Then, Complete Separate Individual Form & Take Necessary Documents for each benificial Owner) </label>
+                                            <br>For company Shareholder Holding 20% Or More Share or Controlling the Company will be Considered as benificial Owner
+											<table class="table card-table table-vcenter text-nowrap table-primary" >
+												<thead  class="bg-primary text-white">
+													<tr >
+														<th class="text-white">Identification (Documents)</th>
+														<th class="text-white"></th>
+														<th class="text-white">reviced Copy</th>
+														<th class="text-white">Varifeid</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>A. Passport No</th>
+														<td><input type="text" id="pno"></td>
+														<td><input type="checkbox" id="pnocb1"></td>
+														<td><input type="checkbox" id="pnocb2">(If applicable)</td>
+													</tr>
+													<tr>
+														<th>B. National ID card No</th>
+														<td><input type="text" id="nid"></td>
+														<td><input type="checkbox" id="nidcb1"></td>
+														<td><input type="checkbox" id="nidcb2">(If applicable)</td>
+													</tr>
+													<tr>
+														<th>C. Birth Certificate No</th>
+														<td><input type="text" id="bcno"></td>
+														<td><input type="checkbox" id="bcnocb1"></td>
+														<td><input type="checkbox" id="bcnocb2"> (If applicable)</td>
+                                                    </tr>
+													<tr>
+														<th>D. Electronic Tax ID (E-TIN) No</th>
+														<td><input type="text" id="etin"></td>
+														<td><input type="checkbox" id="etincb1"></td>
+														<td><input type="checkbox" id="etincb2">(If applicable)</td>
+													</tr>
+													<tr>
+														<th>E. Driving License No</th>
+														<td><input type="text" id="dr"></td>
+														<td><input type="checkbox" id="drcb1"></td>
+														<td><input type="checkbox" id="drcb2">(If applicable)</td>
+													</tr>
+													<tr>
+														<th>F. Other Documents</th>
+														<td><input type="text" id="od"></td>
+														<td><input type="checkbox" id="odcb1"></td>
+														<td><input type="checkbox" id="odcb2">(If applicable)</td>
+													</tr>
+												</tbody>
+                                            </table>
+											<div class="form-group">
+												<label class="form-label"><br>Reason for Opening the Account of Non-resident and Foreigner</label>
+												<textarea class="form-control" name="example-textarea-input" rows="2"></textarea>
+                                            </div>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1">Type of Visa</label>
+														<input type="text" class="form-control" id="tvisa">
+													</div>
+												</div>
+												<div class="form-group col-md-6">
+													<div class="form-group">
+														<label class="form-label" for="exampleInputEmail1">Exp. Date</label>
+														<input type="date" class="form-control" id="vdate" >
+													</div>
+												</div>
+											</div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="exampleInputEmail1">Is Work Permit and Permission to Open Account From Appropriate Authority is Taken for Opening the Account of Work Permit Holder? (if applicable)</label>
+                                                <input type="radio" id="yes" name="workpermit" value="yes">
+                                                <label for="male">Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                                <input type="radio" id="no" name="workpermit" value="no">
+                                                <label for="female">No</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="exampleInputEmail1">Is The customer a politically Exposed Person(PEP)/ Influential Person(IP)/ Head or high officials of international organization and their family members or close associates(Accordin to defination of the circular issued by the BFIU)?</label>
+                                                <input type="radio" id="yes" name="pol" value="yes">
+                                                <label for="male">Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                                <input type="radio" id="no" name="pol" value="no">
+                                                <label for="female">No</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="exampleInputEmail1">If Answer is Yes, Then <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A. Has the Approval Been Taken From Senior Management?</label>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <input type="radio" id="yes" name="mng" value="yes">
+                                                <label for="male">Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                                <input type="radio" id="no" name="mng" value="no">
+                                                <label for="female">No</label>
+                                                <label class="form-label" for="exampleInputEmail1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B. Has the Customer Been Interviewed Face to Face?</label>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <input type="radio" id="yes" name="intr" value="yes">
+                                                <label for="male">Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                                <input type="radio" id="no" name="intr" value="no">
+                                                <label for="female">No</label>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="form-label" for="exampleInputEmail1">Is there any match to the customer name with the terrorist activity, funding in terrorist activities or listed person or entity on suspicion for Financing of proliferation of weapons of mass destruction under UN Security Council's different regulations and any listed person or banned entity by the Government of Bangladesh according to related laws, rules and circular.</label>
+                                                <input type="radio" id="yes" name="match" value="yes">
+                                                <label for="male">Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                                <input type="radio" id="no" name="match" value="no">
+                                                <label for="female">No</label>
+                                            </div>
+											<div class="form-group">
+												<label class="col-form-label">If Yes, Then Details of Action Taken Regarding this Issue</label>
+												<textarea class="form-control" name="example-textarea-input" rows="2"></textarea>
+                                            </div>
+											<div class="form-group">
+                                                <label class="col-form-label"><h3>Risk Rating</h3></label>
+                                                <br>
+												<label class="col-form-label">A. What Does the Customer Do/In What type of Business is the Customer Engaged?</label>
+                                            </div>
+                                            <table class="table card-table table-vcenter text-nowrap table-primary" >
+												<thead  class="bg-primary text-white">
+													<tr >
+														<th class="text-white">Sl</th>
+														<th class="text-white">Type</th>
+														<th class="text-white">Bank Score</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>1</th>
+														<td><input type="checkbox" id="t1"> Jewelry/ Gold Business/ Valuable Metal Business</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>2</th>
+														<td><input type="checkbox" id="t1"> Money Changer/ Courier Service/ Mobile Banking Agent</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>3</th>
+														<td><input type="checkbox" id="t1"> Real Estate Developer/ Agent</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>4</th>
+														<td><input type="checkbox" id="t1"> Promoter of Construction Project/ Constructor</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>5</th>
+														<td><input type="checkbox" id="t1"> Art/Antic Dealer</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>6</th>
+														<td><input type="checkbox" id="t1"> Restaurant/Bar/Night club/Residential Hotel / Parlor Business</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>7</th>
+														<td><input type="checkbox" id="t1"> Import/Export</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>8</th>
+														<td><input type="checkbox" id="t1"> Manpower Export Business</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>9</th>
+														<td><input type="checkbox" id="t1"> Arms Business</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>10</th>
+														<td><input type="checkbox" id="t1"> Garments Business/Garments Accessories/ Buying House</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>11</th>
+														<td><input type="checkbox" id="t1"> Pilot/Flight Attended</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>12</th>
+														<td><input type="checkbox" id="t1"> Trusty</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>13</th>
+														<td><input type="checkbox" id="t1"> Share/Stock Business Investor</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>14</th>
+														<td><input type="checkbox" id="t1"> Software Business/ Information & Technology Business</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>15</th>
+														<td><input type="checkbox" id="t1"> Expatriate (Foreigner Working in Bangladesh)</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<th>16</th>
+														<td><input type="checkbox" id="t1"> Travel Agent</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>17</th>
+														<td><input type="checkbox" id="t1"> Investor with Annual More than 1 Crore Investment.</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>18</th>
+														<td><input type="checkbox" id="t1"> Freight/Shipping/Cargo Agent</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>19</th>
+														<td><input type="checkbox" id="t1"> Auto Business (New/ Reconditioned Car) Business</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>20</th>
+														<td><input type="checkbox" id="t1"> Business (Leather and Leather Related Goods)</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>21</th>
+														<td><input type="checkbox" id="t1"> House Construction Materials Business</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>22</th>
+														<td><input type="checkbox" id="t1"> Professional (Journalist, Lawyer, Doctor, Engineer, Chartered Accountant)</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>23</th>
+														<td><input type="checkbox" id="t1"> Director (Private/
+                                                            Public Limited Company)</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>24</th>
+														<td><input type="checkbox" id="t1"> High level Official of Multinational Organization</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>25</th>
+														<td><input type="checkbox" id="t1"> Housewives</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>26</th>
+														<td><input type="checkbox" id="t1"> Employment in Information & Technology</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>27</th>
+														<td><input type="checkbox" id="t1"> Player/Media Celebrity/ Producer/Director</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>28</th>
+														<td><input type="checkbox" id="t1"> Freelance Software Developer</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<th>29</th>
+														<td><input type="checkbox" id="t1"> Business Agent</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th>30</th>
+														<td><input type="checkbox" id="t1"> Government Job</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th>31</th>
+														<td><input type="checkbox" id="t1"> Landlord</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th>32</th>
+														<td><input type="checkbox" id="t1"> Thread Business/ jute Business</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th>33</th>
+														<td><input type="checkbox" id="t1"> Transport Operator</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th>34</th>
+														<td><input type="checkbox" id="t1"> Tobacco & Cigaratte Business</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th>35</th>
+														<td><input type="checkbox" id="t1"> Amusement Organization/Park</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th>36</th>
+														<td><input type="checkbox" id="t1"> Motor Parts/ Workshop Business</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th>37</th>
+														<td><input type="checkbox" id="t1"> Private Service Managerial</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th>38</th>
+														<td><input type="checkbox" id="t1"> Teacher (Government/Private/Autonomous Educational Institution)</td>
+														<td>2</td>
+													</tr>
+													<tr>
+														<th>39</th>
+														<td><input type="checkbox" id="t1"> Service (Private)</td>
+														<td>2</td>
+													</tr>
+													<tr>
+														<th>40</th>
+														<td><input type="checkbox" id="t1"> Small Business (Yearly Turnover Under 50 Lakh)</td>
+														<td>2</td>
+													</tr>
+													<tr>
+														<th>41</th>
+														<td><input type="checkbox" id="t1"> Self-employed Professional</td>
+														<td>2</td>
+													</tr>
+													<tr>
+														<th>42</th>
+														<td><input type="checkbox" id="t1"> Computer/ Mobile Phone Dealer</td>
+														<td>2</td>
+													</tr>
+													<tr>
+														<th>43</th>
+														<td><input type="checkbox" id="t1"> Manufacturer (Except Firearms)</td>
+														<td>2</td>
+													</tr>
+													<tr>
+														<th>44</th>
+														<td><input type="checkbox" id="t1"> Student</td>
+														<td>2</td>
+													</tr>
+													<tr>
+														<th>45</th>
+														<td><input type="checkbox" id="t1"> Retired from service</td>
+														<td>1</td>
+													</tr>
+													<tr>
+														<th>46</th>
+														<td><input type="checkbox" id="t1"> Farmer/ Worker/ Fisher</td>
+														<td>1</td>
+													</tr>
+													<tr>
+														<th>47</th>
+														<td><input type="checkbox" id="t1"> others</td>
+														<td>1-5</td>
+													</tr>
+												</tbody>
+                                            </table>
+                                            (To assess customer's risk grading details information of customer's profession need to be analyzed: In case of business, type of business, dimension of money, area of business, size of business, beneficial owner of account etc including consideration of other particular aspects customer have to categorized weather its high or low risk. In case of employment, detail information need to be taken, especially type of employment & responsibilities. Considering all these aspects, customer may give higher score rather than mentioned in serial no. 16-46)
+                                            <br>
+											<div class="form-group">
+                                                <br>
+												<label class="col-form-label">B. Customer's Monthly Income</label>
+                                            </div>
+                                            <table class="table card-table table-vcenter text-nowrap table-primary" >
+												<thead  class="bg-primary text-white">
+													<tr >
+														<th class="text-white">Sl</th>
+														<th class="text-white">Amount (Taka)</th>
+														<th class="text-white">Bank Score</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>1</th>
+														<td><input type="checkbox" id="t1"> Upto 1 lakh</td>
+														<td>0</td>
+													</tr>
+													<tr>
+														<th>2</th>
+														<td><input type="checkbox" id="t1"> >1 to 3 lakh</td>
+														<td>1</td>
+													</tr>
+													<tr>
+														<th>3</th>
+														<td><input type="checkbox" id="t1"> More Than 3 lakh</td>
+														<td>3</td>
+													</tr>
+												</tbody>
+                                            </table>
+                                            <div class="form-group">
+                                                <br>
+												<label class="col-form-label">C. Type of Account Opening</label>
+                                            </div>
+                                            <table class="table card-table table-vcenter text-nowrap table-primary" >
+												<thead  class="bg-primary text-white">
+													<tr >
+														<th class="text-white">Sl</th>
+														<th class="text-white">Type</th>
+														<th class="text-white">Bank Score</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>1</th>
+														<td><input type="checkbox" id="t1"> By Relationship Manager/Branch</td>
+														<td>0</td>
+													</tr>
+													<tr>
+														<th>2</th>
+														<td><input type="checkbox" id="t1"> By Direct Sales agent</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th>3</th>
+														<td><input type="checkbox" id="t1"> Internet/ Non Face to face</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th>4</th>
+														<td><input type="checkbox" id="t1"> Walk In/Unsolicited</td>
+														<td>3</td>
+													</tr>
+												</tbody>
+                                            </table>
+											<div class="form-group">
+                                                <br>
+												<label class="col-form-label">D. Expected Amount of Monthly Total Transactions</label>
+                                            </div>
+                                            <table class="table card-table table-vcenter text-nowrap table-primary" >
+												<thead  class="bg-primary text-white">
+													<tr >
+														<th class="text-white">Sl</th>
+                                                        <th class="text-white">Amount of Transaction in Current A/C (in Lacs)</th>
+                                                        <th class="text-white">Amount of Transaction in Saving A/C (in Lacs)</th>
+														<th class="text-white">Bank Score</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>1</th>
+														<td><input type="checkbox" id="t1"> 0-10</td>
+														<td><input type="checkbox" id="t1"> 0-5</td>
+														<td>0</td>
+													</tr>
+													<tr>
+														<th>2</th>
+														<td><input type="checkbox" id="t1"> >10-20</td>
+														<td><input type="checkbox" id="t1"> >5-10</td>
+														<td>1</td>
+													</tr>
+													<tr>
+														<th>3</th>
+														<td><input type="checkbox" id="t1"> >20</td>
+														<td><input type="checkbox" id="t1"> >10</td>
+														<td>3</td>
+													</tr>
+												</tbody>
+                                            </table>
+											<div class="form-group">
+                                                <br>
+												<label class="col-form-label">E. Expected Number of monthly Total Transaction</label>
+                                            </div>
+                                            <table class="table card-table table-vcenter text-nowrap table-primary" >
+												<thead  class="bg-primary text-white">
+													<tr >
+														<th class="text-white">Sl</th>
+                                                        <th class="text-white">Number of Transaction in Current A/C (in Lacs)</th>
+                                                        <th class="text-white">Number of Transaction in Saving A/C (in Lacs)</th>
+														<th class="text-white">Bank Score</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>1</th>
+														<td><input type="checkbox" id="t1"> 0-15</td>
+														<td><input type="checkbox" id="t1"> 0-10</td>
+														<td>0</td>
+													</tr>
+													<tr>
+														<th>2</th>
+														<td><input type="checkbox" id="t1"> 16-25</td>
+														<td><input type="checkbox" id="t1"> 11-20</td>
+														<td>1</td>
+													</tr>
+													<tr>
+														<th>3</th>
+														<td><input type="checkbox" id="t1"> >25</td>
+														<td><input type="checkbox" id="t1"> >20</td>
+														<td>3</td>
+													</tr>
+												</tbody>
+                                            </table>
+											<div class="form-group">
+                                                <br>
+												<label class="col-form-label">F. Expected Amount of Cash Transactions</label>
+                                            </div>
+                                            <table class="table card-table table-vcenter text-nowrap table-primary" >
+												<thead  class="bg-primary text-white">
+													<tr >
+														<th class="text-white">Sl</th>
+                                                        <th class="text-white">Amount of Transaction in Current A/C (in Lacs)</th>
+                                                        <th class="text-white">Amount of Transaction in Saving A/C (in Lacs)</th>
+														<th class="text-white">Bank Score</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>1</th>
+														<td><input type="checkbox" id="t1"> 0-5</td>
+														<td><input type="checkbox" id="t1"> 0-2</td>
+														<td>0</td>
+													</tr>
+													<tr>
+														<th>2</th>
+														<td><input type="checkbox" id="t1"> >5-10</td>
+														<td><input type="checkbox" id="t1"> >2-5</td>
+														<td>1</td>
+													</tr>
+													<tr>
+														<th>3</th>
+														<td><input type="checkbox" id="t1"> >10</td>
+														<td><input type="checkbox" id="t1"> >5</td>
+														<td>3</td>
+													</tr>
+												</tbody>
+                                            </table>
+											<div class="form-group">
+                                                <br>
+												<label class="col-form-label">G. Expected Amount of Monthly Cash Transactions</label>
+                                            </div>
+                                            <table class="table card-table table-vcenter text-nowrap table-primary" >
+												<thead  class="bg-primary text-white">
+													<tr >
+														<th class="text-white">Sl</th>
+                                                        <th class="text-white">Number of Transaction in Current A/C (in Lacs)</th>
+                                                        <th class="text-white">Number of Transaction in Saving A/C (in Lacs)</th>
+														<th class="text-white">Bank Score</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>1</th>
+														<td><input type="checkbox" id="t1"> 0-10</td>
+														<td><input type="checkbox" id="t1"> 0-5</td>
+														<td>0</td>
+													</tr>
+													<tr>
+														<th>2</th>
+														<td><input type="checkbox" id="t1"> 11-20</td>
+														<td><input type="checkbox" id="t1"> 6-10</td>
+														<td>1</td>
+													</tr>
+													<tr>
+														<th>3</th>
+														<td><input type="checkbox" id="t1"> >20</td>
+														<td><input type="checkbox" id="t1"> >10</td>
+														<td>3</td>
+													</tr>
+												</tbody>
+                                            </table>
+											<div class="form-group">
+                                                <br>
+												<label class="col-form-label">G. Expected Amount of Monthly Cash Transactions</label>
+                                            </div>
+                                            <table class="table card-table table-vcenter text-nowrap table-primary" >
+												<thead  class="bg-primary text-white">
+													<tr >
+														<th class="text-white">Sl</th>
+                                                        <th class="text-white">Total Risk Score</th>
+														<th class="text-white"></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>1</th>
+														<td><input type="checkbox" id="t1"> >=14</td>
+														<td> High</td>
+													</tr>
+													<tr>
+														<th>2</th>
+														<td><input type="checkbox" id="t1"> &lt;14 </td>
+														<td> low</td>
+													</tr>
+												</tbody>
+                                            </table>
+											<div class="form-group">
+												<label class="col-form-label">Comments</label>
+												<textarea class="form-control" name="example-textarea-input" rows="4" placeholder="Comments"></textarea>
+											</div>
+											<button type="submit" class="btn btn-primary ">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Back to top -->
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top" ><i class="fa fa-rocket' %}"></i></a>
+
+		<!-- JQuery js-->
+		<script src="{% static 'js/vendors/jquery-3.2.1.min.js' %}"></script>
+
+		<!-- Bootstrap js -->
+		<script src="{% static 'plugins/bootstrap-4.3.1-dist/js/popper.min.js' %}"></script>
+		<script src="{% static 'plugins/bootstrap-4.3.1-dist/js/bootstrap.min.js' %}"></script>
+
+		<!--JQuery Sparkline Js-->
+		<script src="{% static 'js/vendors/jquery.sparkline.min.js' %}"></script>
+
+		<!-- Circle Progress Js-->
+		<script src="{% static 'js/vendors/circle-progress.min.js' %}"></script>
+
+		<!-- Star Rating Js-->
+		<script src="{% static 'plugins/rating/jquery.rating-stars.js' %}"></script>
+
+		<!-- Fullside-menu Js-->
+		<script src="{% static 'plugins/toggle-sidebar/sidemenu.js' %}"></script>
+
+		<!--Select2 js -->
+		<script src="{% static 'plugins/select2/select2.full.min.js' %}"></script>
+
+		<!-- Timepicker js -->
+		<script src="{% static 'plugins/time-picker/jquery.timepicker.js' %}"></script>
+		<script src="{% static 'plugins/time-picker/toggles.min.js' %}"></script>
+
+		<!-- Datepicker js -->
+		<script src="{% static 'plugins/date-picker/spectrum.js' %}"></script>
+		<script src="{% static 'plugins/date-picker/jquery-ui.js' %}"></script>
+		<script src="{% static 'plugins/input-mask/jquery.maskedinput.js' %}"></script>
+
+		<!-- Inline js -->
+		<script src="{% static 'js/select2.js' %}"></script>
+		<script src="{% static 'js/formelements.js' %}"></script>
+
+		<!-- file uploads js -->
+        <script src="{% static 'plugins/fileuploads/js/dropify.js' %}"></script>
+
+		<!--InputMask Js-->
+		<script src="{% static 'plugins/jquery-inputmask/jquery.inputmask.bundle.min.js' %}"></script>
+
+		<!-- Custom scroll bar Js-->
+		<script src="{% static 'plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+
+		<!--Counters -->
+		<script src="{% static 'plugins/counters/counterup.min.js' %}"></script>
+		<script src="{% static 'plugins/counters/waypoints.min.js' %}"></script>
+
+		<!-- Custom Js-->
+		<script src="{% static 'js/admin-custom.js' %}"></script>
+
+	</body>
+</html>
+
+
